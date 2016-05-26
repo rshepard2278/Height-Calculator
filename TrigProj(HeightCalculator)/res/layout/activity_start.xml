@@ -1,0 +1,403 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rshepard.trigprojheightcalculator.StartActivity" >
+    
+    
+	<!-- Triangle Image -->
+	<ImageView
+        android:id="@+id/triangleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_gravity="center"
+        android:src="@drawable/triangle"/>
+    
+	<!-- Vert Layout for Trig Vals -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        
+        <!-- Angle Layout -->
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/angles_margin_top"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        
+	        <!-- Angle A Label -->
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="@dimen/trig_val_pad_left"
+	            android:layout_gravity="center"
+	            android:text="@string/angle_a"
+	            android:textSize="@dimen/text_size_angles"/>
+	        
+	        <!-- Angle A Value -->
+	        <TextView 
+	            android:id="@+id/angleAvalue"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="@dimen/trig_val_pad_left"
+	            android:text="@string/dummy_val"
+	            android:textStyle="bold"
+	            android:textSize="@dimen/text_size_angles"/>
+	        
+     </LinearLayout>
+        
+    
+        <!-- Horz Layout for first row -->
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+				<!--Sin Label -->
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingStart="@dimen/trig_val_pad"
+		            android:text="@string/sin_label"
+		            android:textSize="@dimen/text_size"/>
+		        
+		        <!--Sin Value -->
+		        <TextView 
+		            android:id="@+id/sin_value"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad_left"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/dummy_val"/>  
+		            
+		        <!--Length A Label -->
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginStart="30dp"
+		            android:text="@string/la_label"
+		            android:textSize="@dimen/text_size"/>
+		        
+		        <!--Length A Value -->
+		        <TextView 
+		            android:id="@+id/lengthA_value"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad"
+		            android:paddingRight="@dimen/trig_val_pad"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/dummy_val"/>
+        </LinearLayout>
+        
+         <!-- Horz Layout for Second row -->
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+            
+		        <!--Cos and Sec -->
+		        
+		        <!--Cos Label -->
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+					android:paddingLeft="@dimen/trig_val_pad"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/cos_label" />
+		        
+				<!--Cos value -->       
+		        <TextView 
+		            android:id="@+id/cos_value"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad_left"
+		         	android:textSize="@dimen/text_size"
+		            android:text="@string/dummy_val"/>  
+		            
+		        <!--Length B Label -->
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginStart="30dp"
+		            android:text="@string/lb_label"
+		            android:textSize="@dimen/text_size"/>
+		        
+		        <!--Length B Value -->
+		        <TextView 
+		            android:id="@+id/lengthB_value"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/dummy_val"/>
+        </LinearLayout>
+        
+        
+        <!-- Horz Layout for Third row -->
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+            
+		        <!--Tan and Cot -->
+		        
+		        <!--Tan Label -->
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/tan_label"/>
+		        
+		        <!--Tan Value -->
+		        <TextView 
+		            android:id="@+id/tan_value"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad_left"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/dummy_val"/>  
+		            
+		        <!--Length C Label -->
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginStart="30dp"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/lc_label"/>
+		        
+		        <!--Length C Value -->
+		        <TextView 
+		            android:id="@+id/lengthc_value"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="@dimen/trig_val_pad"
+		            android:textSize="@dimen/text_size"
+		            android:text="@string/dummy_val"/>
+       
+        
+    </LinearLayout>
+    
+
+    
+    <!-- Vert Layout 2 for Trig Vals -->
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+        
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/angles_margin_top"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        
+                    <!-- Angle d Label -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/angle_d"
+            android:textSize="@dimen/text_size_angles"/>
+        
+        <!-- Angle d Value -->
+        <TextView 
+            android:id="@+id/angleDvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad_left"
+            android:text="@string/dummy_val"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_angles"/>
+   
+        </LinearLayout>
+        <!-- Horz Layout for first row -->
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+		<!--Sin d Label -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/trig_val_pad"
+            android:text="@string/sind_label"
+            android:textSize="@dimen/text_size"/>
+        
+        <!--Sin d Value -->
+        <TextView 
+            android:id="@+id/sind_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad_left"
+            android:textSize="@dimen/text_size"
+            android:text="@string/dummy_val"/>  
+            
+        <!--Length D Label -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/ld_label"
+            android:textSize="@dimen/text_size"/>
+        
+        <!--Length D Value -->
+        <TextView 
+            android:id="@+id/lengthD_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad"
+            android:paddingRight="@dimen/trig_val_pad"
+            android:textSize="@dimen/text_size"
+            android:text="@string/dummy_val"/>
+        </LinearLayout>
+        
+         <!-- Horz Layout for Second row -->
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+            
+        <!--Cos and Sec -->
+        
+        <!--Cos d Label -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/trig_val_pad"
+            android:textSize="@dimen/text_size"
+            android:text="@string/cosd_label"/>
+        
+		<!--Cos d value -->       
+        <TextView 
+            android:id="@+id/cosd_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad_left"
+         	android:textSize="@dimen/text_size"
+            android:text="@string/dummy_val"/>  
+            
+        <!--Length E Label -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/le_label"
+            android:textSize="@dimen/text_size"/>
+        
+        <!--Length B Value -->
+        <TextView 
+            android:id="@+id/lengthE_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad"
+            android:textSize="@dimen/text_size"
+            android:text="@string/dummy_val"/>
+        </LinearLayout>
+        
+        
+        <!-- Horz Layout for Third row -->
+        <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+            
+        <!--Tan and Cot -->
+        
+        <!--Tan Label -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad"
+            android:textSize="@dimen/text_size"
+            android:text="@string/tand_label"/>
+        
+        <!--Tan Value -->
+        <TextView 
+            android:id="@+id/tand_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/trig_val_pad_left"
+            android:textSize="@dimen/text_size"
+            android:text="@string/dummy_val"/>  
+
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+        
+   
+    
+    <!-- Height Layout -->
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_height"
+            android:textSize="@dimen/height_text_size"/>
+        
+        <TextView 
+            android:id="@+id/heightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_val" 
+            android:textStyle="bold"
+            android:textSize="@dimen/height_text_size"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height_unit"
+            android:textSize="@dimen/height_text_size"/>
+        
+    </LinearLayout>
+    
+   
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        
+         <EditText 
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/user_height"/>
+        
+        <Button 
+            android:id="@+id/calcHeightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_height"
+            android:onClick="onClickCalcHeight"/>
+        
+
+
+        </LinearLayout>
+     </LinearLayout>
+</LinearLayout>

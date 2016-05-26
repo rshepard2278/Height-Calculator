@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trig Proj (Height Calculator)</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sin_label">"sin a:  "</string>
+    <string name="sind_label">"sin d:  "</string>
+    <string name="cos_label">"cos a: "</string>
+    <string name="cosd_label">"cos d: "</string>
+    <string name="tan_label">"tan a:  "</string>
+    <string name="tand_label">"tan d:  "</string>
+    <string name="la_label">"Length A: "</string>   
+    <string name="lb_label">"Length B: "</string>
+    <string name="lc_label">"Length C: "</string>
+    <string name="ld_label">"Length D: "</string>
+    <string name="le_label">"Length E: "</string>
+    <string name="dummy_val">0</string>
+    <string name="angle_in_degrees">"Degrees: "</string>
+    <string name="angle_in_rads">"Radians: "</string>
+    <string name="angle_a">Angle a:</string>
+    <string name="angle_d">Angle d:</string>
+    <string name="total_height">"Total Height: "</string>
+    <string name="height_unit">""</string>
+    <string name="get_height">Enter Your Height(in)</string>
+    <string name="reset">Reset</string>
+
+</resources>
